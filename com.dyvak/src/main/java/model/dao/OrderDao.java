@@ -3,5 +3,5 @@ package model.dao;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserRepository {
+public class OrderDao {
 }

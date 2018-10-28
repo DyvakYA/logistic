@@ -1,5 +1,7 @@
 package model.entity;
 
+import model.builder.OrderBuilder;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,6 +18,10 @@ public class Order {
     @GeneratedValue
     public int getId(){
         return this.id;
+    }
+
+    public static OrderBuilder builder(){
+        return new OrderBuilder();
     }
 
 }

@@ -1,5 +1,7 @@
 package model.entity;
 
+import model.builder.TransportBuilder;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,4 +18,8 @@ public class Transport {
     public int getId() {
         return id;
     }
+
+     public static TransportBuilder builder(){
+        return new TransportBuilder();
+     }
 }

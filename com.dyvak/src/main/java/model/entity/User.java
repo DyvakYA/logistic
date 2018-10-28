@@ -1,5 +1,7 @@
 package model.entity;
 
+import model.builder.UserBuilder;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -33,5 +35,9 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public static UserBuilder builder() {
+        return new UserBuilder();
     }
 }

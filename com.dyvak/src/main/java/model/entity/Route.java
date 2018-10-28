@@ -1,5 +1,7 @@
 package model.entity;
 
+import model.builder.RouteBuilder;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,5 +17,9 @@ public class Route {
     @GeneratedValue
     public int getId() {
         return id;
+    }
+
+    public static RouteBuilder builder(){
+        return new RouteBuilder();
     }
 }

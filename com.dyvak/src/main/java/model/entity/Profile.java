@@ -1,5 +1,7 @@
 package model.entity;
 
+import model.builder.ProfileBuilder;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,5 +17,9 @@ public class Profile {
     @GeneratedValue
     public int getId() {
         return id;
+    }
+
+    public static ProfileBuilder builder(){
+        return new ProfileBuilder();
     }
 }

@@ -1,26 +1,24 @@
 package model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import model.builder.OrderBuilder;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table(name = "order")
+@Document
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Order {
 
+    @Id
     private int id;
     private String name;
 
-    @Id
-    @GeneratedValue
-    public int getId(){
+    public int getId() {
         return this.id;
     }
 
-    public static OrderBuilder builder(){
+    public static OrderBuilder builder() {
         return new OrderBuilder();
     }
 

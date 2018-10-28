@@ -1,20 +1,18 @@
 package model.entity;
 
 import model.builder.ProfileBuilder;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table(name = "profile")
+@Document
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Profile {
 
+    @Id
     private int id;
 
-    @Id
-    @GeneratedValue
     public int getId() {
         return id;
     }

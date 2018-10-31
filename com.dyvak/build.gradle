@@ -4,6 +4,8 @@ plugins {
 
 group 'logistic'
 version '1.0-SNAPSHOT'
+name 'logistic'
+
 
 sourceCompatibility = 1.8
 

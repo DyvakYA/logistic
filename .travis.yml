@@ -26,7 +26,7 @@ after_success:
 - docker tag $AUTH_SERVICE:$COMMIT $AUTH_SERVICE:$TAG
 - docker push $AUTH_SERVICE
 
-# AUTH SERVICE
+# MAIN SERVICE
   - export MAIN_SERVICE=LogisticCompany/main-service
   - docker build -t $MAIN_SERVICE:$COMMIT ./main-service
   - docker tag $MAIN_SERVICE:$COMMIT $MAIN_SERVICE:$TAG

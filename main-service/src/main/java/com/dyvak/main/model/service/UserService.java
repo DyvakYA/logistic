@@ -2,6 +2,7 @@ package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.UserRepository;
 import com.dyvak.main.model.dto.UserDto;
+import com.dyvak.main.model.entity.impl.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UserService implements LogisticService<UserDto>{
 
     @Autowired
     private UserRepository dao;

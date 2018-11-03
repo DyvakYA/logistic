@@ -11,6 +11,8 @@ public class Cargo {
 
     @Id
     private int id;
+
+    private String number;
     private double weight;
     private CargoCategory cargoCategory;
 }

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProfileService {
+public class ProfileService implements LogisticService<ProfileDto> {
 
     @Autowired
     private ProfileRepository dao;

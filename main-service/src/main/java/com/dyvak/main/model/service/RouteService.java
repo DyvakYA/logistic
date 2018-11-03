@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class RouteService {
+public class RouteService implements LogisticService<RouteDto> {
 
     @Autowired
     private RouteRepository dao;

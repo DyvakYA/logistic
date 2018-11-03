@@ -1,9 +1,9 @@
 package com.dyvak.main.model.dao;
 
-import com.dyvak.main.model.entity.impl.User;
+import com.dyvak.main.model.entity.impl.Cargo;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, String> {
+public interface CargoRepository extends CrudRepository<Cargo, String> {
 }

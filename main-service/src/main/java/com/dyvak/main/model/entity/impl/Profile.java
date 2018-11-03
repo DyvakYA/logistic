@@ -1,8 +1,12 @@
 package com.dyvak.main.model.entity.impl;
 
+import com.dyvak.main.model.entity.enums.RoleType;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.validation.constraints.Email;
+import java.util.Date;
 
 
 @Document
@@ -11,6 +15,13 @@ public class Profile {
 
     @Id
     private int id;
+
+    private RoleType role;
+
+    @Email
+    private String email;
+
+    private Date birthDate;
 
     public int getId() {
         return id;

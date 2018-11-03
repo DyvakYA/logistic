@@ -1,9 +1,9 @@
 package com.dyvak.main.model.dao;
 
-import com.dyvak.main.model.entity.impl.User;
+import com.dyvak.main.model.entity.impl.MedicalInsurance;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, String> {
+public interface MedicalInsuranceRepository extends CrudRepository<MedicalInsurance, String> {
 }

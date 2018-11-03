@@ -2,7 +2,7 @@ package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.TransportRepository;
 import com.dyvak.main.model.dto.TransportDto;
-import com.dyvak.main.model.entity.Transport;
+import com.dyvak.main.model.entity.impl.Transport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

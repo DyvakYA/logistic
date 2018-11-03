@@ -1,4 +1,4 @@
-package com.dyvak.main.model.entity;
+package com.dyvak.main.model.entity.impl;
 
 
 import org.hibernate.validator.constraints.Length;

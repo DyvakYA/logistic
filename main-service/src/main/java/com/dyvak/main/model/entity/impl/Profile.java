@@ -1,4 +1,4 @@
-package com.dyvak.main.model.entity;
+package com.dyvak.main.model.entity.impl;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Route {
+public class Profile {
 
     @Id
     private int id;

@@ -2,7 +2,7 @@ package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.RouteRepository;
 import com.dyvak.main.model.dto.RouteDto;
-import com.dyvak.main.model.entity.Route;
+import com.dyvak.main.model.entity.impl.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

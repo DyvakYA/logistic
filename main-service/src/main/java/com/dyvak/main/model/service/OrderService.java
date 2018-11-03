@@ -2,7 +2,7 @@ package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.OrderRepository;
 import com.dyvak.main.model.dto.OrderDto;
-import com.dyvak.main.model.entity.Order;
+import com.dyvak.main.model.entity.impl.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

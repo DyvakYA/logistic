@@ -1,6 +1,6 @@
 package com.dyvak.main.model.dao;
 
-import com.dyvak.main.model.entity.Profile;
+import com.dyvak.main.model.entity.impl.Profile;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

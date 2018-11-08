@@ -1,5 +1,19 @@
-language:
-  java
+language: java
 
 jdk:
-  oraclejdk8
+- oraclejdk8
+
+os:
+- linux
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+  - $HOME/.gradle
+
+script:
+- ./gradlew clean publish -i --continue
+- ./gradlew -b finalize.gradle finalize -i

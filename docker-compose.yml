@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   authentication-service:
-    image: DyvakYA/authentication-service
+    image: dyvak/authentication-service
     restart: always
     ports:
     - "8899:8899"
@@ -9,7 +9,7 @@ services:
     - main-service
 
   main-service:
-    image: DyvakYA/main-service
+    image: dyvak/main-service
     restart: always
     links:
     - authentication-service

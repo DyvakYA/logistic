@@ -5,11 +5,11 @@ services:
 
 language: java
 
+jdk:
+- oraclejdk8
+
 before_install:
 - chmod +x gradlew
-
-jdk:
-  - oraclejdk8
 
 #TAG
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`

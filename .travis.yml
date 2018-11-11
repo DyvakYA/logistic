@@ -16,10 +16,10 @@ jdk:
 - oraclejdk8
 
 install:
-  -./gradlew assemble
+  -./gradle assemble
 
 script:
-- ./gradlew check
+- ./gradle check
 
 #TAG
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`

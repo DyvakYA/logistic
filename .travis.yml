@@ -13,13 +13,13 @@ cache:
   - $HOME/.gradle/caches/
 
 jdk:
-- oraclejdk8
+  - oraclejdk8
 
 install:
-  -./gradle assemble
+  - ./gradle assemble
 
 script:
-- ./gradle check
+  - ./gradle check
 
 #TAG
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`

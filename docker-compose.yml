@@ -1,14 +1,16 @@
-authentication-service:
-  image: DyvakYA/authentication-service
-  restart: always
-  ports:
-  - "8899:8899"
-  links:
-  - main-service
+version: '2.1'
+services:
+  authentication-service:
+    image: DyvakYA/authentication-service
+    restart: always
+    ports:
+    - "8899:8899"
+    links:
+    - main-service
 
-main-service:
-  image: DyvakYA/main-service
-  restart: always
-  links:
-  - authentication-service
+  main-service:
+    image: DyvakYA/main-service
+    restart: always
+    links:
+    - authentication-service
 

@@ -1,2 +1,3 @@
 rootProject.name = 'main-service'
+includeFlat 'LogisticCompany'
 

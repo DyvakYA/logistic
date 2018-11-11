@@ -2,6 +2,7 @@ package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.DriverCertificateRepository;
 import com.dyvak.main.model.dto.DriverCertificateDto;
+import com.dyvak.main.model.entity.impl.DriverCertificate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -9,13 +10,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DriverCertificateService implements LogisticService<DriverCertificateDto>{
+public class DriverCertificateService implements LogisticService<DriverCertificateDto> {
 
     @Autowired
     private DriverCertificateRepository dao;
 
     @Override
     public List<DriverCertificateDto> findAll(PageRequest id) {
+        List<DriverCertificate> certificate = (List<DriverCertificate>) dao.findAll();
         return null;
     }
 
@@ -30,7 +32,7 @@ public class DriverCertificateService implements LogisticService<DriverCertifica
     }
 
     @Override
-    public void update(Long id, DriverCertificateDto dto) {
+    public void update(int id, DriverCertificateDto dto) {
 
     }
 

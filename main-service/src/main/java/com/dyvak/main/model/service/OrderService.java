@@ -38,7 +38,7 @@ public class OrderService implements LogisticService<OrderDto> {
     }
 
     @Transactional
-    public void update(Long id, OrderDto dto) {
+    public void update(int id, OrderDto dto) {
         Order order = new Order();
         dao.save(order);
     }

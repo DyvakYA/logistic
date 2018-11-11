@@ -12,7 +12,7 @@ public interface LogisticService<T> {
 
     void create(T dto);
 
-    void update(Long id, T dto);
+    void update(int id, T dto);
 
     void delete(Long[] ids);
 

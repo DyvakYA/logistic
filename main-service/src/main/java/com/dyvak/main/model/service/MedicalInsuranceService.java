@@ -1,7 +1,7 @@
 package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.MedicalInsuranceRepository;
-import com.dyvak.main.model.entity.impl.MedicalInsurance;
+import com.dyvak.main.model.dto.MedicalInsuranceDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -9,28 +9,28 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class MedicalInsuranceService implements LogisticService<MedicalInsurance> {
+public class MedicalInsuranceService implements LogisticService<MedicalInsuranceDto> {
 
     @Autowired
     private MedicalInsuranceRepository dao;
 
     @Override
-    public List<MedicalInsurance> findAll(PageRequest id) {
+    public List<MedicalInsuranceDto> findAll(PageRequest id) {
         return null;
     }
 
     @Override
-    public MedicalInsurance findOne(Long id) {
+    public MedicalInsuranceDto findOne(Long id) {
         return null;
     }
 
     @Override
-    public void create(MedicalInsurance dto) {
+    public void create(MedicalInsuranceDto dto) {
 
     }
 
     @Override
-    public void update(Long id, MedicalInsurance dto) {
+    public void update(int id, MedicalInsuranceDto dto) {
 
     }
 

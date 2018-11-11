@@ -15,4 +15,20 @@ public class Cargo {
     private String number;
     private double weight;
     private CargoCategory cargoCategory;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public CargoCategory getCargoCategory() {
+        return cargoCategory;
+    }
+
+    public void setCargoCategory(CargoCategory cargoCategory) {
+        this.cargoCategory = cargoCategory;
+    }
 }

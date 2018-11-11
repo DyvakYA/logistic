@@ -1,6 +1,7 @@
 package com.dyvak.main.model.service;
 
 import com.dyvak.main.model.dao.MedicalCertificateRepository;
+import com.dyvak.main.model.dto.MedicalCertificateDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -8,28 +9,28 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class MedicalCertificateService implements LogisticService<MedicalCertificateService>{
+public class MedicalCertificateService implements LogisticService<MedicalCertificateDto>{
 
     @Autowired
     private MedicalCertificateRepository dao;
 
     @Override
-    public List<MedicalCertificateService> findAll(PageRequest id) {
+    public List<MedicalCertificateDto> findAll(PageRequest id) {
         return null;
     }
 
     @Override
-    public MedicalCertificateService findOne(Long id) {
+    public MedicalCertificateDto findOne(Long id) {
         return null;
     }
 
     @Override
-    public void create(MedicalCertificateService dto) {
+    public void create(MedicalCertificateDto dto) {
 
     }
 
     @Override
-    public void update(Long id, MedicalCertificateService dto) {
+    public void update(int id, MedicalCertificateDto dto) {
 
     }
 

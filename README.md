@@ -7,6 +7,7 @@
 # Introduction
 
 Logistic company system. An order for the shipping of goods. 
+
 Assigned : the transport (the transport must be insured), the type of cargo, 
 the trailer for transportation (there may be several, depending on the transport), 
 the driver (may be pilot), the route with stops and duration. 
@@ -17,7 +18,7 @@ insurance, and a medical certificate of health.
  # Getting started
  
  Before you dive into the material, you should be familiar with various
- Programming/Software Design Principles (DRY, KISS, YAGNT, SOLID).
+ Programming/Software Design Principles (DRY, KISS, YAGNI, SOLID).
  
   # Warning
  

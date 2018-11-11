@@ -15,9 +15,6 @@ cache:
 jdk:
   - oraclejdk8
 
-install:
-  - gradle assemble
-
 script:
   - gradle check
 

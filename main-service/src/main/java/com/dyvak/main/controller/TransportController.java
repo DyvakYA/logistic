@@ -39,7 +39,7 @@ public class TransportController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Void> update(@Valid @PathVariable(value = "id") Long id, @RequestBody TransportDto dto) {
+    public ResponseEntity<Void> update(@Valid @PathVariable(value = "id") int id, @RequestBody TransportDto dto) {
         service.update(id, dto);
         return new ResponseEntity<>(HttpStatus.OK);
     }

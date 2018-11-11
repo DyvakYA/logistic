@@ -37,7 +37,7 @@ public class RouteService implements LogisticService<RouteDto> {
     }
 
     @Transactional
-    public void update(Long id, RouteDto dto) {
+    public void update(int id, RouteDto dto) {
         Route route = new Route();
         dao.save(route);
     }

@@ -30,7 +30,7 @@ public class TransportInsuranceService implements LogisticService<TransportInsur
     }
 
     @Override
-    public void update(Long id, TransportInsuranceDto dto) {
+    public void update(int id, TransportInsuranceDto dto) {
 
     }
 

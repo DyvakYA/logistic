@@ -39,7 +39,7 @@ public class ProfileController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Void> update(@Valid @PathVariable(value = "id") Long id, @RequestBody ProfileDto dto) {
+    public ResponseEntity<Void> update(@Valid @PathVariable(value = "id") int id, @RequestBody ProfileDto dto) {
         service.update(id, dto);
         return new ResponseEntity<>(HttpStatus.OK);
     }

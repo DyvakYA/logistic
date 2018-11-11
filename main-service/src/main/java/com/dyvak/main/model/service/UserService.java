@@ -38,7 +38,7 @@ public class UserService implements LogisticService<UserDto>{
     }
 
     @Transactional
-    public void update(Long id, UserDto dto) {
+    public void update(int id, UserDto dto) {
         User user = new User();
         dao.save(user);
     }

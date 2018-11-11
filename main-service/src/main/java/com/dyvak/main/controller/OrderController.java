@@ -39,7 +39,7 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Void> update(@Valid @PathVariable(value = "id") Long id, @RequestBody OrderDto dto) {
+    public ResponseEntity<Void> update(@Valid @PathVariable(value = "id") int id, @RequestBody OrderDto dto) {
         service.update(id, dto);
         return new ResponseEntity<>(HttpStatus.OK);
     }

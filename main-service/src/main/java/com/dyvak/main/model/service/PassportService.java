@@ -30,7 +30,7 @@ public class PassportService implements LogisticService<PassportDto> {
     }
 
     @Override
-    public void update(Long id, PassportDto dto) {
+    public void update(int id, PassportDto dto) {
 
     }
 

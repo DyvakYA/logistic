@@ -30,7 +30,7 @@ public class StopService implements LogisticService<StopDto>{
     }
 
     @Override
-    public void update(Long id, StopDto dto) {
+    public void update(int id, StopDto dto) {
 
     }
 

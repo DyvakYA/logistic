@@ -38,7 +38,7 @@ public class ProfileService implements LogisticService<ProfileDto> {
     }
 
     @Transactional
-    public void update(Long id, ProfileDto dto) {
+    public void update(int id, ProfileDto dto) {
         Profile profile = new Profile();
         dao.save(profile);
     }

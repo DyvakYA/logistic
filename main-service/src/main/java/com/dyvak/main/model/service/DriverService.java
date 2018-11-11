@@ -31,7 +31,7 @@ public class DriverService implements LogisticService<DriverDto>{
     }
 
     @Override
-    public void update(Long id, DriverDto dto) {
+    public void update(int id, DriverDto dto) {
 
     }
 

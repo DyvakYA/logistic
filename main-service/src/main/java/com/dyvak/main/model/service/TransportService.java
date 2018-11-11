@@ -37,7 +37,7 @@ public class TransportService implements LogisticService<TransportDto> {
     }
 
     @Transactional
-    public void update(Long id, TransportDto dto) {
+    public void update(int id, TransportDto dto) {
         Transport transport = new Transport();
         dao.save(transport);
     }

@@ -30,7 +30,7 @@ public class PlaceService implements LogisticService<PlaceDto> {
     }
 
     @Override
-    public void update(Long id, PlaceDto dto) {
+    public void update(int id, PlaceDto dto) {
 
     }
 

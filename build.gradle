@@ -7,12 +7,17 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
-repositories {
-    mavenCentral()
+def getKeyForBintray(){
+    def keyValue = System.getenv("BINTRAY")
+    if(keyValue == null){
+        println 'returning no key'
+        return 'no'
+    }else{
+        println 'returning bintray key:'
+        return keyForBintray
+    }
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
 
-modules
+
+

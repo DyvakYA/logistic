@@ -21,7 +21,7 @@ jdk:
 - oraclejdk8
 
 script:
-- ./gradlew build --scan -s
+- ./gradlew assembleRelease
 
 
 after_success:

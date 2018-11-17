@@ -1,7 +1,6 @@
-FROM java:8-jre
-MAINTAINER Yurii Dyvak <dyvakyurii@gmail.com>
-
-ADD ./target/authentication-service.jar /app/
-CMD ["java", "-Xmx200m", "-jar", "/app/authentication-service.jar"]
-
-EXPOSE 5000
+FROM frolvlad/alpine-oraclejdk8:slim
+ENV MONGO_URL mongodb://localhost/dyvak
+EXPOSE 8080
+RUN mkdir -p /app/
+ADD build/libs/belfastjug-sample-01-0.0.1-SNAPSHOT.jar /app/belfastjug-sample-01.jar
+ENTRYPOINT ["java", "-jar", "/app/belfastjug-sample-01.jar"]

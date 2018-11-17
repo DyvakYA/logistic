@@ -2,10 +2,12 @@ package com.dyvak.main.model.entity.impl;
 
 import com.dyvak.main.model.entity.enums.RoleType;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+import org.hibernate.validator.constraints.Email;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.Email;
+
 import java.util.Date;
 
 

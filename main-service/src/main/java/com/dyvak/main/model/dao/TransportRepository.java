@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TransportRepository extends CrudRepository<Transport, String> {
+    void findById(String transportId);
+
+    void deleteById(String id);
 }

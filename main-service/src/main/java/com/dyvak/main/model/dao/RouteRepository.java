@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RouteRepository extends CrudRepository<Route, String> {
+    void deleteById(String id);
+
+    void findById(String routeId);
 }

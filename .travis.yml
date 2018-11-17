@@ -8,19 +8,6 @@ jdk: - oraclejdk8
 before_install:
 - chmod +x gradlew
 
-##TAG
-#- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
-#
-## AUTH SERVICE
-#- export AUTH_SERVICE=dyvak/authentication-service
-#- docker build -t $AUTH_SERVICE:$COMMIT ./authentication-service
-#- docker tag $AUTH_SERVICE:$COMMIT $AUTH_SERVICE:$TAG
-#- docker push $AUTH_SERVICE
-#
-## MAIN SERVICE
-#- export MAIN_SERVICE=dyvak/main-service
-#- docker build -t $MAIN_SERVICE:$COMMIT ./main-service
-#- docker tag $MAIN_SERVICE:$COMMIT $MAIN_SERVICE:$TAG
-#- docker push $MAIN_SERVICE
+
 
 

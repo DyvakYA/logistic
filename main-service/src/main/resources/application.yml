@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    active: "dev"
+
+server:
+  email: dyvakyurii@gmail.com
+
+---
+spring:
+  profiles: dev
+  application:
+    name: main-service
+data:
+  mongodb:
+    uri: ${MONGO_URL}
+server:
+  email: dyvakyurii@@gmail.com
+  port: 8000
+
+---
+spring:
+  profiles: test
+  application:
+    name: main-service
+data:
+  mongodb:
+    uri: ${MONGO_URL}
+server:
+  email: dyvakyurii@@gmail.com
+  port: 8001
+
+---
+spring:
+  profiles: prod
+  application:
+    name: main-service
+data:
+  mongodb:
+    uri: ${MONGO_URL}
+server:
+  email: dyvakyurii@@gmail.com
+  port: 8002

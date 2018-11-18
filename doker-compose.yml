@@ -1,48 +1,21 @@
 version: '2.1'
 services:
-
   authentication-service:
-    environment:
-      MONGODB_PASSWORD: $MONGODB_PASSWORD
-    image:  authentication-service
-    restart: always
-    depends_on:
-      config:
-        condition: service_healthy
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "10"
+    build: authentication-service
+    ports:
+      - 9000:9000
 
   authentication-mongodb:
-    environment:
-      MONGODB_PASSWORD: $MONGODB_PASSWORD
-    image: mongodb
-    restart: always
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "10"
+    build: mongodb
+    ports:
+      - 5000:5000
 
   main-service:
-    environment:
-      MONGODB_PASSWORD: $MONGODB_PASSWORD
-    image: main-service
-    restart: always
-    depends_on:
-      config:
-        condition: service_healthy
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "10"
+    build: main-service
+    ports:
+      - 8000:8000
 
   main-mongodb:
-    image: mongodb
-    restart: always
-    environment:
-      MONGODB_PASSWORD: $MONGODB_PASSWORD
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "10"
+    build: mongodb
+    ports:
+      - 6000:6000

@@ -20,6 +20,25 @@ insurance, and a medical certificate of health.
  Before you dive into the material, you should be familiar with various
  Programming/Software Design Principles (DRY, KISS, YAGNI, SOLID).
  
+ **A simple way to deal with personal finances**
+ 
+ This is a [proof-of-concept application](https://logistoccompany.com), which demonstrates [Microservice Architecture Pattern](http://martinfowler.com/microservices/) using Spring Boot, Spring Cloud and Docker.
+ With a not pretty neat user interface, by the way.
+ 
+ ![login](https://user-images.githubusercontent.com/20241892/49181517-41bb3d00-f360-11e8-87d0-0179460cf403.gif)
+ 
+ #### User service
+ Contains general user input logic and validation: incomes/expenses items, savings and user settings.
+ 
+ Method	| Path	| Description	| User authenticated	| Available from UI
+ ------------- | ------------------------- | ------------- |:-------------:|:----------------:|
+ GET	| /users	| Get all users data	| × | ×
+ GET	| /users/{id}	| Get specified users data	| × | ×
+ POST	| /users	| Create new user data	| × | 	×
+ PUT	| /users{id}	| Update specified user data	| × | ×
+ DELETE	| /users/{id[]}	| Delete specified users data	| × | ×
+ 
+ 
   # Warning
  
  Complexity and patterns should only be introduced when they are needed for practical

@@ -3,6 +3,7 @@
 ![Code Climate coverage](https://img.shields.io/codeclimate/coverage/DyvakYA/LogisticCompany.svg)
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/DyvakYA/LogisticCompany.svg)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DyvakYA/LogisticCompany/master/LICENSE.md)
+![Completeness](https://img.shields.io/badge/completeness-10%25-lightgrey.svg)
 
 
 

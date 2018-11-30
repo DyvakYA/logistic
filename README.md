@@ -30,15 +30,13 @@ insurance, and a medical certificate of health.
  ![login](https://user-images.githubusercontent.com/20241892/49181517-41bb3d00-f360-11e8-87d0-0179460cf403.gif)
  
  
- Method	| Path	| Description	| User authenticated	| Available from UI
+ Method	| Path	| Description	| User authenticated | Available from UI
  --- | --- | --- |:---:|:---:|
  GET	| /login	| Login user	|   | ×
- GET	| /registration	| ser registration	|   | ×
+ GET	| /registration	| User registration	|   | ×
  
  ##### User API instruction
- Contains general user input logic and validation: incomes/expenses items, savings and user settings.
-  
- Method	| Path	| Description	| User authenticated	| Available from UI
+  Method	| Path	| Description	| User authenticated | Available from UI
  --- | --- | --- |:---:|:---:|
  GET	| /users	| Get all users data	| × | ×
  GET	| /users/{id}	| Get specified users data	| × | ×
@@ -47,7 +45,7 @@ insurance, and a medical certificate of health.
  DELETE	| /users/{id[]}	| Delete specified users data	| × | ×
  
  ##### Order API instruction 
-  Method	| Path	| Description	| User authenticated	| Available from UI
+  Method	| Path	| Description	| User authenticated | Available from UI
   --- | --- | --- |:---:|:---:|
   GET	| /orders	| Get all orders data	| × | 
   GET	| /orders/{id}	| Get specified orders data	| × | 

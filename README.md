@@ -1,6 +1,11 @@
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DyvakYA/LogisticCompany/master/LICENSE.md)
-[![Build status](https://travis-ci.com/DyvakYA/LogisticCompany.svg?branch=master)](https://travis-ci.org/DyvakYA/LogisticCompany) 
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+[![Build status](https://travis-ci.com/DyvakYA/LogisticCompany.svg?branch=master)](https://travis-ci.org/DyvakYA/LogisticCompany) 
+![Code Climate coverage](https://img.shields.io/codeclimate/coverage/DyvakYA/LogisticCompany.svg)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/DyvakYA/LogisticCompany.svg)
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DyvakYA/LogisticCompany/master/LICENSE.md)
+
+
+
 # Logistic company
 
 ## Schema

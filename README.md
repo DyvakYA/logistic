@@ -1,10 +1,19 @@
-# Logistic company
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DyvakYA/LogisticCompany/master/LICENSE.md)
 [![Build status](https://travis-ci.com/DyvakYA/LogisticCompany.svg?branch=master)](https://travis-ci.org/DyvakYA/LogisticCompany) 
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+# Logistic company
 
+## Schema
 
-# Introduction
+ * [LogisticCompany](.)
+   * [authentication-service](./authentication-service) (Spring Boot, MongoDB)
+   * [main-service](./main-service) (Spring Boot, MongoDB)
+   * [user-interface](./user-interface) (Angular CLI)
+
+ This is a [proof-of-concept application](https://logisticcompany.com), which demonstrates [Microservice Architecture Pattern](http://martinfowler.com/microservices/) using Spring Boot, Spring Cloud and Docker.
+ With a not pretty neat user interface, by the way.
+
+## Introduction
 
 Logistic company system. An order for the shipping of goods. 
 
@@ -15,31 +24,38 @@ Vehicles must move with an interval or a timetable defined for each Route.
 The driver must have a certificate (corresponding to the type of transport and the cargo being transported), 
 insurance, and a medical certificate of health.
 
- # Getting started
- 
- Before you dive into the material, you should be familiar with various
- Programming/Software Design Principles (DRY, KISS, YAGNI, SOLID).
- 
- **A simple way to deal with personal finances**
- 
- This is a [proof-of-concept application](https://logistoccompany.com), which demonstrates [Microservice Architecture Pattern](http://martinfowler.com/microservices/) using Spring Boot, Spring Cloud and Docker.
- With a not pretty neat user interface, by the way.
+ ## Getting started
+ **A simple way to get access to the application is enter login and password**
  
  ![login](https://user-images.githubusercontent.com/20241892/49181517-41bb3d00-f360-11e8-87d0-0179460cf403.gif)
  
- #### User service
- Contains general user input logic and validation: incomes/expenses items, savings and user settings.
  
  Method	| Path	| Description	| User authenticated	| Available from UI
- ------------- | ------------------------- | ------------- |:-------------:|:----------------:|
+ --- | --- | --- |:---:|:---:|
+ GET	| /login	| Get all users data	|   | ×
+ GET	| /registration	| Get specified users data	|   | ×
+ 
+ ##### User API instruction
+ Contains general user input logic and validation: incomes/expenses items, savings and user settings.
+  
+ Method	| Path	| Description	| User authenticated	| Available from UI
+ --- | --- | --- |:---:|:---:|
  GET	| /users	| Get all users data	| × | ×
  GET	| /users/{id}	| Get specified users data	| × | ×
  POST	| /users	| Create new user data	| × | 	×
  PUT	| /users{id}	| Update specified user data	| × | ×
  DELETE	| /users/{id[]}	| Delete specified users data	| × | ×
  
+ ##### Order API instruction 
+  Method	| Path	| Description	| User authenticated	| Available from UI
+  --- | --- | --- |:---:|:---:|
+  GET	| /order	| Get all orders data	| × | 
+  GET	| /orders/{id}	| Get specified orders data	| × | 
+  POST	| /orders	| Create new order data	| × | 	
+  PUT	| /orders/{id}	| Update specified order data	| × | 
+  DELETE	| /users/{id[]}	| Delete specified order data	| × | 
  
-  # Warning
+  ## Warning
  
  Complexity and patterns should only be introduced when they are needed for practical
  extensibility.
@@ -48,7 +64,7 @@ insurance, and a medical certificate of health.
   
  The owner of this repository is not responsible for any consequences.
  
- # License
+ ## License
  
  This project is licensed under the terms of the MIT license.
 

@@ -32,8 +32,8 @@ insurance, and a medical certificate of health.
  
  Method	| Path	| Description	| User authenticated	| Available from UI
  --- | --- | --- |:---:|:---:|
- GET	| /login	| Get all users data	|   | ×
- GET	| /registration	| Get specified users data	|   | ×
+ GET	| /login	| Login user	|   | ×
+ GET	| /registration	| ser registration	|   | ×
  
  ##### User API instruction
  Contains general user input logic and validation: incomes/expenses items, savings and user settings.
@@ -49,11 +49,11 @@ insurance, and a medical certificate of health.
  ##### Order API instruction 
   Method	| Path	| Description	| User authenticated	| Available from UI
   --- | --- | --- |:---:|:---:|
-  GET	| /order	| Get all orders data	| × | 
+  GET	| /orders	| Get all orders data	| × | 
   GET	| /orders/{id}	| Get specified orders data	| × | 
   POST	| /orders	| Create new order data	| × | 	
   PUT	| /orders/{id}	| Update specified order data	| × | 
-  DELETE	| /users/{id[]}	| Delete specified order data	| × | 
+  DELETE	| /orders/{id[]}	| Delete specified order data	| × | 
  
   ## Warning
  

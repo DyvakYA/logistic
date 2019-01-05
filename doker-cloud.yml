@@ -1,0 +1,19 @@
+authentication-service:
+    image: dyvak/authentication-service
+    ports:
+      - 9000:9000
+
+authentication-mongodb:
+    image: dyvak/mongodb
+    ports:
+      - 5000:5000
+
+main-service:
+    image: dyvak/main-service
+    ports:
+      - 8000:8000
+
+main-mongodb:
+    image: dyvak/mongodb
+    ports:
+      - 6000:6000

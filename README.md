@@ -31,12 +31,27 @@ The driver must have a certificate (corresponding to the type of transport and t
 insurance, and a medical certificate of health.
 
  ## Getting started
- **A simple way to get access to the application is enter login and password**
  
- ![login](https://user-images.githubusercontent.com/20241892/49181517-41bb3d00-f360-11e8-87d0-0179460cf403.gif)
+**What you’ll need**
  
+ * A favorite text editor or IDE
  
- Method	| Path	| Description	| User authenticated | Available from UI
+ **Back-end**
+ * JDK 1.8 or later
+ * MongoDB
+ * Spring Boot 1.5.1.RELEASE
+ * Gradle 4+
+ * Docker
+ 
+ **Front-end**
+ * Node.js
+ * Angular CLI
+ * Bootstrap
+ * jQuery
+ 
+ ![chrome-capture](https://user-images.githubusercontent.com/20241892/50727733-be8fc280-1127-11e9-8efd-96fa14ec0b51.gif)
+ 
+  Method	| Path	| Description	| User authenticated | Available from UI
  --- | --- | --- |:---:|:---:|
  GET	| /login	| Login user	|   | ×
  GET	| /registration	| User registration	|   | ×
@@ -59,18 +74,9 @@ insurance, and a medical certificate of health.
   PUT	| /orders/{id}	| Update specified order data	| × | 
   DELETE	| /orders/{id[]}	| Delete specified order data	| × | 
  
-  ## Warning
- 
- Complexity and patterns should only be introduced when they are needed for practical
- extensibility.
- 
- The number of bugs may increase and the code will cease to be supported.
-  
- The owner of this repository is not responsible for any consequences.
- 
  ## License
  
- This project is licensed under the terms of the MIT license.
+ This project is licensed under the terms of the MIT license. **Free Software, Hell Yeah!**
 
 
 

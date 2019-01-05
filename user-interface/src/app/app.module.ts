@@ -1,37 +1,51 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
+import {ReactiveFormsModule} from '@angular/forms';
 
-import {AppComponent} from './application/app.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {HeroesComponent} from './heroes/heroes.component';
-import {HeroDetailComponent} from './hero-detail/hero-detail.component';
-import {MessageComponent} from './messages/messages.component';
-import {AppRoutingModule} from './app-routing.module';
-import {UsersComponent} from './users/users.component';
-import NavbarComponent from './navbar/navbar.component';
-import FooterComponent from './footer/footer.component';
+import ApplicationComponent from '../components/application/application.component';
+import CarouselComponent from '../components/carousel/carousel.component';
+import FooterComponent from '../components/footer/footer.component';
+import NavbarComponent from '../components/navbar/navbar.component';
+import ProductItemComponent from '../components/product-item/product-item.component';
+import SearchComponent from '../components/search/search.component';
+import HomeComponent from '../components/home/home.component';
+import {ProductDetailComponent} from '../components/product-detail/product-detail.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {ProductService} from '../services/product.service';
+// import StarsComponent from '../components/stars/stars.component';
+// impost {ProductService} from '../service/product.service';
+
+
+// import {MessageComponent} from './messages/messages.component';
+// import {AppRoutingModule} from './app-routing.module';
+// import {from} from 'rxjs';
+// import {UsersComponent} from './users/users.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessageComponent,
-    UsersComponent,
-    NavbarComponent,
-    FooterComponent
-  ],
   imports: [
     BrowserModule,
-    FormsModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'products/:productId', component: ProductDetailComponent}
+    ])
   ],
-  providers: [
-    // no need to place any providers due to the `providedIn` flag...
+  declarations: [
+    ApplicationComponent,
+    FooterComponent,
+    NavbarComponent,
+    SearchComponent,
+    CarouselComponent,
+    HomeComponent,
+    ProductDetailComponent,
+    ProductItemComponent
+    // MessageComponent,
+    // UsersComponent,
   ],
-  bootstrap: [AppComponent]
+  providers:    [ProductService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  bootstrap: [ApplicationComponent]
 })
 
 export class AppModule {
